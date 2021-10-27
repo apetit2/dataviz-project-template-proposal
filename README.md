@@ -114,4 +114,13 @@ The above sketch depicts the initial sketch up of the geospatial chart I have si
 * Week of (11/24)
   * Work on any remaining tasks that weren't finished in above time line (11/27)
 
-  
+---
+
+### Iteration Based On Feedback
+* Added a new scatter plot that compares minimum wage against rent prices for a state
+* Clicking on state in the geospatial plot, navigates to a line chart for each state
+* More info can be found above, added to the existing prototype sections
+
+## Iterated Links
+* [Geospatial Chart](https://apetit2.github.io/cs573-load-data/#/minimum-wage/geospatial/iterated)
+* [Scatter Plot](https://apetit2.github.io/cs573-load-data/#/minimum-wage/scatter-plot)
