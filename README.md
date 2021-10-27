@@ -2,12 +2,16 @@
 
 ## Data
 
-For my final data visualization project, I will be presenting information on minimum wage and cost of living throughout the United States. Currently, I have one formatted dataset that provides minimum wage data for all 50 states as well as the 5 U.S owned territories since 1968. This dataset can be found [here](https://gist.github.com/apetit2/212a7cd715f8ba34eb637d014fffb12f). In addition, I have located additional data from the U.S Housing and Urban Development Department that provides average rent costs since the early 2000s. This data is provided free of charge at this [location](https://www.huduser.gov/portal/datasets/50per.html#null). In the coming weeks, I will be parsing and formatting this data as a means to show cost of living.
-
+For my final data visualization project, I will be presenting information on minimum wage and cost of living throughout the United States. Currently, I have one formatted dataset that provides minimum wage data for all 50 states as well as the 5 U.S owned territories since 1968. This dataset can be found [here](https://gist.github.com/apetit2/212a7cd715f8ba34eb637d014fffb12f). In addition, I have located additional data from the U.S Housing and Urban Development Department that provides average rent costs since the early 2000s. This data is provided free of charge at this [location](https://www.huduser.gov/portal/datasets/50per.html#null). This dataset can be found [here](https://gist.github.com/apetit2/aaa39169ab48ff313cfb2bfe12486fef).
 ---
 
 ## Prototypes
 As an initial POC, I have created a few visualizations to help demonstrate the direction I hope to take this project.
+
+Links:
+* [Geospatial Chart](https://apetit2.github.io/cs573-load-data/#/minimum-wage/geospatial/iterated)
+* [Line Chart](https://apetit2.github.io/cs573-load-data/#/minimum-wage/line-chart)
+* [Scatter Plot](https://apetit2.github.io/cs573-load-data/#/minimum-wage/scatter-plot)
 
 ### Min. Wage Geospatial Chart
 Since I am comparing minimum wage values throughout the country, I thought it would make sense to produce a geospatial chart that easily compares highest and lowest minimum wages for a given year. I have used color saturation to distinguish states with higher minimum wage (intenser shades of blue) from those with lower minimum wages (less intense shades of blue). I also opted to include a slider to show minimum wage trends throughout the years (1968-2020). Because of this inclusion, however, I chose to represent all dollar amounts shown in 2020 dollars. This makes it a bit more accurate to compare data between multiple years since inflation has consistently trended upwards and would skewer results otherwise. To further highlight minimum wage trends by year, I included an auto increment switch. When toggled on, the visualization will increment by year every half second. Lastly, because color isn't great at representing distinct quantitative data, I have included a tooltip to show the exact effective minimum wage for each state. This tooltip will show when hovering over any state on the map. Clicking on any state will bring up specific data to that chart formatted in a line chart. A gif showing off the visualizations capabilities is included below.
@@ -15,8 +19,12 @@ Since I am comparing minimum wage values throughout the country, I thought it wo
 ![Min. Wage Geospatial Chart](./video/geospatial-demo.gif)*figure 1: Minimum Wage Geospatial Chart*
 
 ### Min. Wage Line Chart
-Another prototype I created for this project, is a highly configurable line chart that can be used to show minimum wage rates for each distinctive state or all collectively. This chart has additional menu drop downs for choosing how lines are grouped, what data is mapped as an x value, and what data is mapped as a y value. With this being said, however, the most reasonable selections are probably the defaults, whereas the x axis represents year, the y axis represents effective minimum wage in 2020 dollars, and the grouping represents state. Future modifications will likely remove these superfluous elements, and, in addition, add a legend, a tooltip, and a comparison line (ie. federal minimum wage through the years) to this chart. 
+Another prototype I created for this project is a highly configurable line chart that can be used to show minimum wage rates for each distinctive state or all collectively. This chart has additional menu drop downs for choosing how lines are grouped, what data is mapped as an x value, and what data is mapped as a y value. With this being said, however, the most reasonable selections are probably the defaults, whereas the x axis represents year, the y axis represents effective minimum wage in 2020 dollars, and the grouping represents state. Future modifications will likely remove these superfluous elements, and, in addition, add a legend, a tooltip, and a comparison line (ie. federal minimum wage through the years) to this chart. 
 ![Min. Wage Line Chart](./video/line-chart-demo.gif)*figure 2: Minimum Wage Line Chart*
+
+### Min. Wage vs. Rent Cost Scatter Plot
+Another prototype I created for this project is a highly configurable scatter plot that can be used to show minimum wage rates for each distinctive state as it pertains to rent costs for that state. Currently there is a slider that can be used to cycle through years: 2001-2020. Like the geospatial chart prototype, the year can be auto incremented by toggling on the auto-increment switch. Moreover, a tooltip provides additional information by hovering over a circle in the chart (each circle represents a unique territory or state). Future modifications will add an additional menu item to choose between rent types (ie. studio, 1BR apartment, 2BR apartment, 3BR apartment, and 4BR apartments). I will also attempt to include additional context on other living expenses for a state. 
+![Min. Wage vs. Rent Cost Scatter Plot](./video/scatter-plot-demo.gif)*figure 3: Minimum Wage VS. Rent Cost Scatter Plot*
 
 ---
 
@@ -31,21 +39,21 @@ Another prototype I created for this project, is a highly configurable line char
 ## Sketches
 
 ### Line Chart
-![Simple Line Chart Sketch](./img/single-line-graph-sketch.jpeg)*figure 3: Simple Line Chart Sketch*
+![Simple Line Chart Sketch](./img/single-line-graph-sketch.jpeg)*figure 4: Simple Line Chart Sketch*
 
-![Multi-Line Chart Sketch](./img/multi-line-graph-sketch.jpeg)*figure 4: Multi-Line Chart Sketch*
+![Multi-Line Chart Sketch](./img/multi-line-graph-sketch.jpeg)*figure 5: Multi-Line Chart Sketch*
 
 The above sketches, highlight two line chart views that I will create for this project. In the *Simple Line Chart Sketch*, a single state will be filtered out and compared with the federal minimum wage through the years. In the *Multi-Line Chart Sketch* all states will be compared to show any interesting trends and outliers. Both graphs, will have tooltips to show more specific information at given data points. 
 
 ### Scatter Plot
 
-![Scatter Plot Sketch](./img/scatter-plot-sketch.jpeg)*figure 5: Scatter Plot Sketch*
+![Scatter Plot Sketch](./img/scatter-plot-sketch.jpeg)*figure 6: Scatter Plot Sketch*
 
 The above sketch, depicts a potential interactive scatter plot that I will look to create that combines data taken from the Kaggle dataset and the ones found on the HUD's website. Here, the X axis represents cost of living, and the y axis represents minimum wage for a given year. Each data point represents a state or territory. Potential interaction for the graph could include an automatic update feature, where every half second or so the data updates to represent a new year (years would go up sequentially). Size of the circle could represent population.
 
 ### Geospatial Chart
 
-![Geospatial Sketch](./img/geospatial-sketch.jpeg)*figure 6: Geospatial Chart*
+![Geospatial Sketch](./img/geospatial-sketch.jpeg)*figure 7: Geospatial Chart*
 
 The above sketch depicts the initial sketch up of the geospatial chart I have since created (figure 1). 
 
