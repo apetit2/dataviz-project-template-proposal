@@ -3,6 +3,7 @@
 ## Data
 
 For my final data visualization project, I will be presenting information on minimum wage and cost of living throughout the United States. Currently, I have one formatted dataset that provides minimum wage data for all 50 states as well as the 5 U.S owned territories since 1968. This dataset can be found [here](https://gist.github.com/apetit2/212a7cd715f8ba34eb637d014fffb12f). In addition, I have located additional data from the U.S Housing and Urban Development Department that provides average rent costs since the early 2000s. This data is provided free of charge at this [location](https://www.huduser.gov/portal/datasets/50per.html#null). This dataset can be found [here](https://gist.github.com/apetit2/aaa39169ab48ff313cfb2bfe12486fef).
+
 ---
 
 ## Prototypes
